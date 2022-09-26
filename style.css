@@ -1,0 +1,51 @@
+* {
+    font-family: 'Overpass', sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 30px;
+    width: 925px;
+    height: 509px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
+    
+}
+
+.accordion-question {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 350px;
+    border-bottom: 1px solid black;
+}
+
+.accordion-question h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+}
+
+.accordion-question img {
+    align-self: center;
+}
+
+.accordion-question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.answer {
+    display: none;
+    width: 350px;
+}
